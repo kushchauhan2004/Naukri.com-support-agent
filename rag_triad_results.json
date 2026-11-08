@@ -1,0 +1,101 @@
+{
+    "mock_llm": true,
+    "total_queries": 15,
+    "results": [
+        {
+            "query": "What is the salary range for a Software Engineer?",
+            "context_relevance": 2.5,
+            "groundedness": 1.94,
+            "answer_relevance": 2.5
+        },
+        {
+            "query": "What is the salary range for a Data Analyst?",
+            "context_relevance": 3.75,
+            "groundedness": 3.0,
+            "answer_relevance": 5.0
+        },
+        {
+            "query": "What are the responsibilities of an HR Executive?",
+            "context_relevance": 1.67,
+            "groundedness": 3.61,
+            "answer_relevance": 3.33
+        },
+        {
+            "query": "What does the Screening application status mean?",
+            "context_relevance": 3.75,
+            "groundedness": 4.11,
+            "answer_relevance": 3.75
+        },
+        {
+            "query": "What does Interview Scheduled status mean?",
+            "context_relevance": 3.75,
+            "groundedness": 4.07,
+            "answer_relevance": 3.75
+        },
+        {
+            "query": "What does Offered status mean?",
+            "context_relevance": 3.33,
+            "groundedness": 4.07,
+            "answer_relevance": 3.33
+        },
+        {
+            "query": "How is application age measured in days?",
+            "context_relevance": 1.25,
+            "groundedness": 0.71,
+            "answer_relevance": 0.0
+        },
+        {
+            "query": "What is the priority review policy for applications?",
+            "context_relevance": 3.75,
+            "groundedness": 3.7,
+            "answer_relevance": 5.0
+        },
+        {
+            "query": "How can I identify an application flagged for priority review?",
+            "context_relevance": 1.67,
+            "groundedness": 3.97,
+            "answer_relevance": 1.67
+        },
+        {
+            "query": "What happens when an application is in Screening?",
+            "context_relevance": 2.5,
+            "groundedness": 4.11,
+            "answer_relevance": 2.5
+        },
+        {
+            "query": "What is the difference between Interview Scheduled and Offered?",
+            "context_relevance": 3.0,
+            "groundedness": 4.06,
+            "answer_relevance": 3.0
+        },
+        {
+            "query": "How many days since an application was created?",
+            "context_relevance": 0.83,
+            "groundedness": 4.0,
+            "answer_relevance": 0.83
+        },
+        {
+            "query": "What salary information is available for Data Analysts?",
+            "context_relevance": 3.0,
+            "groundedness": 3.0,
+            "answer_relevance": 4.0
+        },
+        {
+            "query": "Explain how coral reefs are formed.",
+            "context_relevance": 0.0,
+            "groundedness": 0.71,
+            "answer_relevance": 0.0
+        },
+        {
+            "query": "Explain stellar nuclear fusion.",
+            "context_relevance": 0.0,
+            "groundedness": 0.0,
+            "answer_relevance": 0.0
+        }
+    ],
+    "average_scores": {
+        "context_relevance": 2.32,
+        "groundedness": 3.0,
+        "answer_relevance": 2.58
+    }
+}

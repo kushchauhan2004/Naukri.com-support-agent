@@ -1,0 +1,119 @@
+TASK 7: LANGGRAPH
+
+Command executed:
+similarity: 0.1177
+out of scope: Explain nuclear fusion
+similarity: 0.1321
+out of scope: What are coral reefs?
+similarity: 0.1173
+
+minimum in scope: 0.5597
+maximum out of scope: 0.1715
+selected threshold: 0.3656
+
+
+in scope query demonstrations
+
+query: What is the salary range for a Data Analyst?
+Answer based on the available documents:
+Data Analysts collect, process, and interpret data to support business decisions.
+The expected annual salary range for this role is INR 600000 to INR 2200000.
+The expected annual salary range for this role is INR 250000 to INR 800000.
+Sources: Data Analyst Role, Product Manager Role, HR Executive Role
+
+query: What does Interview Scheduled mean?
+Answer based on the available documents:
+Interview Scheduled means that the candidate has progressed beyond the initial screening stage.
+Candidates who meet the initial requirements may proceed to an interview.
+An interview is arranged to evaluate relevant skills, experience, communication, and suitability for the role.
+Sources: Application Status: Interview Scheduled, Application Status: Screening
+
+query: What are the responsibilities of an HR Executive?
+Answer based on the available documents:
+HR Executives manage recruitment coordination, employee records, onboarding, and human resource activities.
+Strong communication, organizational, and interpersonal skills are important for this position.
+They may review education, skills, experience, and expected salary.
+Sources: Application Status: Screening, HR Executive Role
+
+query: What does the Offered status indicate?
+Answer based on the available documents:
+The Offered status indicates that the organization has extended a job offer to the candidate.
+The Applied status indicates that a candidate has successfully submitted an application.
+The offer generally contains information about compensation, job responsibilities, and employment conditions.
+Sources: Application Status: Applied, Application Status: Offered
+
+query: How many days can an application be old?
+I don't know based on the available documents.
+
+
+out of scope query demonstration
+query: How do coral reefs reproduce?
+I don't know based on the available documents.
+total records: 50
+count per category: {'Sales Associate': 10, 'HR Executive': 10, 'Software Engineer': 10, 'Data Analyst': 10, 'Product Manager': 10}
+count per status: {'Applied': 10, 'Rejected': 10, 'Offered': 10, 'Screening': 10, 'Interview Scheduled': 10}
+priority review flagged: 10
+priority review percentage: 20.0 %
+total applications: 50
+80th percentile threshold: 0.387
+
+escalation formula:
+score = (0.6 * priority) + (0.4 * days_since_created / 30)
+
+application status results
+
+record id: 1
+{'record_id': '1', 'status': 'Applied', 'expected_salary_inr': 330000, 'escalation_score': 0.333, 'escalation_recommended': False}
+
+record id: 2
+{'record_id': '2', 'status': 'Rejected', 'expected_salary_inr': 710000, 'escalation_score': 0.0, 'escalation_recommended': False}
+
+record id: 3
+{'record_id': '3', 'status': 'Applied', 'expected_salary_inr': 480000, 'escalation_score': 0.907, 'escalation_recommended': True}
+
+record id: 4
+{'record_id': '4', 'status': 'Offered', 'expected_salary_inr': 520000, 'escalation_score': 0.107, 'escalation_recommended': False}
+
+record id: 5
+{'record_id': '5', 'status': 'Screening', 'expected_salary_inr': 430000, 'escalation_score': 0.32, 'escalation_recommended': False}
+
+record id: 100
+{'error': 'Application record not found'}
+langgraph agent created successfully
+
+rag route
+query: What is the salary range for a Data Analyst?
+selected route: rag
+response: Answer based on the available documents:
+Data Analysts collect, process, and interpret data to support business decisions.
+The expected annual salary range for this role is INR 600000 to INR 2200000.
+The expected annual salary range for this role is INR 250000 to INR 800000.
+Sources: Data Analyst Role, Product Manager Role, HR Executive Role
+
+status route
+query: Check application status for record id 5
+selected route: status
+response: {'record_id': '5', 'status': 'Screening', 'expected_salary_inr': 430000, 'escalation_score': 0.32, 'escalation_recommended': False}
+
+workflow diagram
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+        __start__([<p>__start__</p>]):::first
+        detect_intent(detect_intent)
+        rag_node(rag_node)
+        status_node(status_node)
+        final_node(final_node)
+        __end__([<p>__end__</p>]):::last
+        __start__ --> detect_intent;
+        detect_intent -. &nbsp;rag&nbsp; .-> rag_node;
+        detect_intent -. &nbsp;status&nbsp; .-> status_node;
+        rag_node --> final_node;
+        status_node --> final_node;
+        final_node --> __end__;
+        classDef default fill:#f2f0ff,line-height:1.2
+        classDef first fill-opacity:0
+        classDef last fill:#bfb6fc

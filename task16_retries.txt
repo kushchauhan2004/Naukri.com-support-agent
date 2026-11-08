@@ -1,0 +1,4 @@
+TASK 16: RETRIES
+
+Command executed:
+Paste actual terminal output here.

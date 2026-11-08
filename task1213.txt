@@ -1,0 +1,4 @@
+TASK 12: LOGGING
+
+Command executed:
+Paste actual terminal output here.

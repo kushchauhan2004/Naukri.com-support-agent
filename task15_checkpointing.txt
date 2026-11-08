@@ -1,0 +1,4 @@
+TASK 15: CHECKPOINTING
+
+Command executed:
+Paste actual terminal output here.

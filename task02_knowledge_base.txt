@@ -1,0 +1,4 @@
+TASK 2: KNOWLEDGE_BASE
+
+Command executed:
+Paste actual terminal output here.

@@ -1,0 +1,63 @@
+{
+"knowledge_base" : [
+    {
+      "document_id": "KB001",
+      "title": "Job Application Process",
+      "content": "The job application process begins when a candidate submits an application for an available position. Each application is assigned a unique record ID to help recruiters track and manage candidate information. Recruiters review applications based on qualifications, experience, and job requirements."
+    },
+    {
+      "document_id": "KB002",
+      "title": "Software Engineer Role",
+      "content": "Software Engineers are responsible for designing, developing, testing, and maintaining software applications. Candidates should have programming knowledge, problem-solving abilities, and an understanding of software development practices. The expected annual salary range for this role is INR 400000 to INR 1800000."
+    },
+    {
+      "document_id": "KB003",
+      "title": "Data Analyst Role",
+      "content": "Data Analysts collect, process, and interpret data to support business decisions. Important skills include SQL, Python, spreadsheet tools, data visualization, and analytical thinking. The expected annual salary range for this role is INR 300000 to INR 1000000."
+    },
+    {
+      "document_id": "KB004",
+      "title": "Product Manager Role",
+      "content": "Product Managers oversee product development and coordinate between business, design, and engineering teams. They define product strategies, prioritize features, and ensure products meet customer needs. The expected annual salary range for this role is INR 600000 to INR 2200000."
+    },
+    {
+      "document_id": "KB005",
+      "title": "HR Executive Role",
+      "content": "HR Executives manage recruitment coordination, employee records, onboarding, and human resource activities. Strong communication, organizational, and interpersonal skills are important for this position. The expected annual salary range for this role is INR 250000 to INR 800000."
+    },
+    {
+      "document_id": "KB006",
+      "title": "Sales Associate Role",
+      "content": "Sales Associates identify potential customers, explain products or services, and maintain customer relationships. They support revenue growth through communication, negotiation, and customer service skills. The expected annual salary range for this role is INR 240000 to INR 900000."
+    },
+    {
+      "document_id": "KB007",
+      "title": "Application Status: Applied",
+      "content": "The Applied status indicates that a candidate has successfully submitted an application. The application is waiting for recruiter review or the next recruitment activity. Candidates should ensure that their submitted information is accurate and complete."
+    },
+    {
+      "document_id": "KB008",
+      "title": "Application Status: Screening",
+      "content": "The Screening status means that recruiters are evaluating a candidate's application against the position requirements. They may review education, skills, experience, and expected salary. Candidates who meet the initial requirements may proceed to an interview."
+    },
+    {
+      "document_id": "KB009",
+      "title": "Application Status: Interview Scheduled",
+      "content": "Interview Scheduled means that the candidate has progressed beyond the initial screening stage. An interview is arranged to evaluate relevant skills, experience, communication, and suitability for the role. Candidates should prepare by reviewing the job description and relevant experience."
+    },
+    {
+      "document_id": "KB010",
+      "title": "Application Status: Offered",
+      "content": "The Offered status indicates that the organization has extended a job offer to the candidate. The offer generally contains information about compensation, job responsibilities, and employment conditions. The candidate must review the offer and communicate their decision to the organization."
+    },
+    {
+      "document_id": "KB011",
+      "title": "Application Status: Rejected",
+      "content": "The Rejected status indicates that the candidate has not been selected to continue in the current recruitment process. This decision may be based on role requirements, qualifications, experience, or other job-related criteria. Candidates may apply for other suitable opportunities in the future."
+    },
+    {
+      "document_id": "KB012",
+      "title": "Priority Review Policy",
+      "content": "Applications marked with flagged_priority_review are identified for additional recruiter attention. Approximately 20 percent of applications are expected to receive this flag in the sample dataset. Priority review does not guarantee an interview, selection, or job offer."
+    }
+]}

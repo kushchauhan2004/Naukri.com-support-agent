@@ -1,0 +1,4 @@
+TASK 3: CHUNKING
+
+Command executed:
+Paste actual terminal output here.
